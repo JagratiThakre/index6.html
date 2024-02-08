@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            height: 600px;
+        }
+        #inner{
+            position: relative;
+            background-color: violet;
+            padding-right: 10%;
+            padding-bottom: 20%;
+            width: 100%;
+            border-radius: 20%;
+            box-shadow: 10px 5px 5px darkmagenta;
+        }
+        #inner::before{
+            content:'';
+            height:25px;
+            background-color: rgb(129, 17, 71);
+            position: absolute;
+            padding: 5% 1%;
+            width: 100%;
+            border-radius: 20%;
+            position: relative;
+            z-index: -1;
+            
+        }
+        #inner:hover{
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="inner">TanuThakur</div> 
+    </div>
+    
+</body>
+</html>
